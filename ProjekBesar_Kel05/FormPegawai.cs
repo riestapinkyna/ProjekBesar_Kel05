@@ -21,10 +21,5 @@ namespace ProjekBesar_Kel05
         {
 
         }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
-        }
     }
 }
