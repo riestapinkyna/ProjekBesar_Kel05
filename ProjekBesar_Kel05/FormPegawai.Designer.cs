@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPegawai));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuTextbox1 = new ns1.BunifuTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +44,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // bunifuTextbox1
+            // 
+            this.bunifuTextbox1.BackColor = System.Drawing.Color.Silver;
+            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
+            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
+            this.bunifuTextbox1.Location = new System.Drawing.Point(448, 337);
+            this.bunifuTextbox1.Name = "bunifuTextbox1";
+            this.bunifuTextbox1.Size = new System.Drawing.Size(250, 42);
+            this.bunifuTextbox1.TabIndex = 1;
+            this.bunifuTextbox1.text = "Bunifu TextBox";
+            // 
             // FormPegawai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bunifuTextbox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormPegawai";
             this.Text = "Form1";
@@ -59,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ns1.BunifuTextbox bunifuTextbox1;
     }
 }
 
